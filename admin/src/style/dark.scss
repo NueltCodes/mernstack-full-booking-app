@@ -1,0 +1,186 @@
+.app.dark {
+  background-color: #111;
+  color: rgb(156, 156, 156);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .single {
+    .left,
+    .chart {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(113, 74, 231, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(152, 152, 152, 0.266);
+    }
+  }
+
+  .new {
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(152, 152, 152, 0.266);
+    }
+    input {
+      color: gray;
+    }
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: gray;
+      .status {
+        padding: 0.4rem;
+        border-radius: 5px;
+
+        &.Approved {
+          color: rgb(4, 148, 4);
+          background-color: rgba(64, 69, 64, 0.193);
+        }
+        &.Declined {
+          color: crimson;
+          background-color: rgba(117, 7, 7, 0.193);
+        }
+
+        &.Pending {
+          color: goldenrod;
+          background-color: rgba(80, 68, 4, 0.192);
+        }
+      }
+    }
+
+    .text-bold {
+      background-color: #111;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+    background-color: #111;
+
+    .search {
+      border-color: gray;
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        color: #999;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 0.4rem;
+        cursor: pointer;
+        color: #999;
+
+        &:hover {
+          background: #7551f865;
+          color: #cfcfcf;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: #7451f8;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .prodList {
+    .TableContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: none;
+      padding: 20px;
+      margin: 20px;
+    }
+  }
+
+  .dataTable {
+    .datagrid {
+      color: #9c9c9c;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: #9c9c9c;
+        border: none;
+      }
+      .cellWithStatus {
+        color: red;
+        padding: 5px;
+        border-radius: 5px;
+
+        &.active {
+          color: rgb(4, 148, 4);
+          background-color: rgba(64, 69, 64, 0.193);
+        }
+        &.pending {
+          color: rgba(218, 165, 32, 0.589);
+          background-color: rgba(80, 68, 4, 0.192);
+        }
+        &.passive {
+          color: rgba(220, 20, 60, 0.697);
+          background-color: rgba(117, 7, 7, 0.193);
+        }
+      }
+
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton {
+          padding: 2px 5px;
+          border-radius: 5px;
+          color: rgb(173, 173, 173);
+          cursor: pointer;
+        }
+
+        .deleteButton {
+          padding: 2px 5px;
+          border-radius: 5px;
+          color: rgb(157, 21, 48);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+  }
+}

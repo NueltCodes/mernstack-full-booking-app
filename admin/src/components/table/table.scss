@@ -1,0 +1,39 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .text-bold {
+    font-weight: bold;
+    background-color: rgba(211, 211, 211, 0.429);
+    color: #575757;
+  }
+
+  .status {
+    padding: 0.4rem;
+    border-radius: 5px;
+
+    &.Approved {
+      color: green;
+      background-color: rgba(145, 236, 145, 0.193);
+    }
+    &.Declined {
+      color: crimson;
+      background-color: rgba(250, 182, 182, 0.193);
+    }
+
+    &.Pending {
+      color: goldenrod;
+      background-color: rgba(224, 201, 71, 0.192);
+    }
+  }
+}
